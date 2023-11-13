@@ -12,7 +12,7 @@ public class MyBookingsTest extends BaseTestPage{
         String inputValue = "abc123";
         MyBookingsPage.elementMobileNumber(driver).sendKeys(inputValue);
 
-        Assert.assertTrue("Error, mobile number field should contain only non-numeric characters!",
+        Assert.assertTrue("Error, mobile number field should contain only numeric characters!",
                 inputValue.matches("^[0-9]+$"));
     }
 }

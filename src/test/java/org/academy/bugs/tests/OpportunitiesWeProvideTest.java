@@ -19,7 +19,7 @@ public class OpportunitiesWeProvideTest extends BaseTestPage{
             e.printStackTrace();
         }
 
-        Assert.assertEquals("Error, page redirection did not occur as expected!",driver.getCurrentUrl(),
-                ApplyNowPage.URL_MY_APPLY_NOW_PAGE);
+        Assert.assertEquals("Error, page redirection did not occur as expected!",
+                ApplyNowPage.URL_MY_APPLY_NOW_PAGE,driver.getCurrentUrl());
     }
 }

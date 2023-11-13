@@ -21,8 +21,8 @@ public class ArticlesPageTest extends BaseTestPage {
             e.printStackTrace();
         }
 
-        Assert.assertEquals("Error, page redirection did not occur as expected!", driver.getCurrentUrl(),
-                SocialMedia.URL_FACEBOOK_PAGE);
+        Assert.assertEquals("Error, page redirection did not occur as expected!",
+                SocialMedia.URL_FACEBOOK_PAGE, driver.getCurrentUrl());
     }
 
     @Test
