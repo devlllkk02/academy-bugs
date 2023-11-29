@@ -14,8 +14,17 @@
  * limitations under the License.
  */
 
-package org.academy.bugs.constants;
+package org.academy.bugs.utils;
 
-public class Constants {
-    public static int WAIT_DURATION_IN_SECONDS = 10;
+import org.academy.bugs.constants.Constants;
+
+public class CommonUtils {
+
+    public static void sleep() {
+        try {
+            Thread.sleep(Constants.WAIT_DURATION_IN_SECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
